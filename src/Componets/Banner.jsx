@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Background from '/public/bacground.png'
 import Email from '../../public/email'
 import { useRef,useEffect } from 'react'
 function Banner() {
+  const [isPopUp,setISPopUp] = useState(false)
   const containerRef = useRef(null)
   
       useEffect (() => {
@@ -13,6 +14,11 @@ function Banner() {
             }, 1000); // 1 soniyadan keyin animatsiya boshlanadi
         }
       }, []);
+
+      const handleClick = () => {
+        setISPopUp((open) => !open)
+      }
+
   return (
     <>
     <div className="banner">
@@ -30,7 +36,7 @@ function Banner() {
                 <div className="left">
                 <Email/>
                 </div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEOwkB6rsZVpz8KgnGdrf3QLTiA_ec3NXFWPPG3enI8ktFAQ/viewform?usp=dialog"> ONLINE Подключение </a>
+                <a  href=''>  ONLINE Подключение </a>
               </div>
             </div>
         </div>
