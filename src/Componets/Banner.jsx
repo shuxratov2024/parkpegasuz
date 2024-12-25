@@ -36,7 +36,7 @@ function Banner() {
                 <div className="left">
                 <Email/>
                 </div>
-                <a  href=''>  ONLINE Подключение </a>
+                <a  href='https://docs.google.com/forms/d/e/1FAIpQLSfEOwkB6rsZVpz8KgnGdrf3QLTiA_ec3NXFWPPG3enI8ktFAQ/viewform?usp=dialog'>  ONLINE Подключение </a>
               </div>
             </div>
         </div>

@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Telegram from '../../public/telegram'
 import Phone from '../../public/phone'
 import Instagramm from '../../public/instagramm'
 
 function Header() {
+    const [isOpen,SetIsOpen] = useState(false)
+
+    const handleOpen = () => {
+        SetIsOpen((active) => !active)
+    }
+
   return (
     <>
     <div className="header">
@@ -43,6 +49,18 @@ function Header() {
                 <a href="">UZ</a>
             </div>
         </div>
+            <button className="brg" onClick={handleOpen}>
+                <div className='div 1'></div>
+                <div className='div 2'></div>
+                <div className='div 3'></div>
+            </button>
+            <div className={`brg-menu ${isOpen ? `active` : ''}`}>
+                <a href="">a</a>
+                <a href="">a</a>
+                <a href="">a</a>
+                <a href="">a</a>
+                <a href="">a</a>
+            </div>
     </div>
     </>
   )

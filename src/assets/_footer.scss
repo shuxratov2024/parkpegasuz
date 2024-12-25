@@ -51,3 +51,16 @@ ul{
         box-shadow: 0 0 10px rgba(46, 58, 140, 0.7);
     }
 }
+
+@media screen and (max-width:1000px){
+    .footer{
+        width: 100%;
+    }
+ .footer-sistem{
+    margin: 0;
+ }   
+ .footer-item{
+    margin: 0;
+    width: 600px;
+ }
+}

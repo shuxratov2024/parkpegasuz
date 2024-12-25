@@ -79,6 +79,7 @@
 
 @media screen and (max-width:1000px) {
     .banner-item{
+        width: 100%;
         flex-direction: column-reverse;
     }
     .banner-right{
