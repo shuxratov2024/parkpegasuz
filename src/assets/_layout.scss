@@ -4,9 +4,14 @@
 
     &-item{
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         max-width: 1220px;
         margin: 0 auto;
+    }
+    &-right{
+        width: 600px;
+        height: 550px;
+        display: flex;
     }
     &-left{
         width: 600px;
@@ -40,5 +45,15 @@
         margin-top: 50px;
         font-weight: 500;
         line-height: 34px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .layout{
+        margin-top: 100px;
+    }
+    .layout-item{
+        flex-direction:inherit;
+        justify-content: center;
     }
 }

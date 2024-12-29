@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import Telegram from '../../public/telegram'
 import Phone from '../../public/phone'
 import Instagramm from '../../public/instagramm'
+import logotype from '/logotype.png'
+// import { Cross as Hamburger } from 'hamburger-react'
+import Hamburger from 'hamburger-react'
+import Footer from './Footer'
 
 function Header() {
     const [isOpen,SetIsOpen] = useState(false)
@@ -14,7 +18,10 @@ function Header() {
     <>
     <div className="header">
         <div className="header__item">
-            <div className="header__logo"></div>
+            <div className="header__logo">
+            <img src={logotype} alt="" width={'60px'} height={'60px'}  />
+
+            </div>
             <div className="header__nav">
                 <nav className="nav__bar">
                     <a href="">О нас</a>
@@ -41,7 +48,7 @@ function Header() {
             </ul>
             </div>
             <div className="header-button">
-                <button> Оставить заявку</button>
+                <a href='https://docs.google.com/forms/d/e/1FAIpQLSfEOwkB6rsZVpz8KgnGdrf3QLTiA_ec3NXFWPPG3enI8ktFAQ/viewform?usp=dialog'> Оставить заявку</a>
             </div>
             <div className="header__lang">
                 <a href="">RU</a>
@@ -49,17 +56,21 @@ function Header() {
                 <a href="">UZ</a>
             </div>
         </div>
-            <button className="brg" onClick={handleOpen}>
-                <div className='div 1'></div>
-                <div className='div 2'></div>
-                <div className='div 3'></div>
-            </button>
+        <div className="logotype">
+            <img src={logotype} alt="" width={'60px'} height={'60px'}  />
+        </div>
+          <Hamburger onToggle={handleOpen}/>
             <div className={`brg-menu ${isOpen ? `active` : ''}`}>
-                <a href="">a</a>
-                <a href="">a</a>
-                <a href="">a</a>
-                <a href="">a</a>
-                <a href="">a</a>
+                <div className="brg-menu_item">
+                    <div className="brg-center">
+            <img src={logotype} alt="" width={'60px'} height={'60px'}  />
+            <nav className="nav-brg">
+                    <a href="">О нас</a> 
+                    <a href="">Тарифы и цены </a>
+                    <a href="">Наш офисы</a>
+            </nav>
+                    </div>
+                </div>
             </div>
     </div>
     </>

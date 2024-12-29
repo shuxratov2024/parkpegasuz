@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import logotype from '/logotype.png'
 
 function Layout() {
 
@@ -8,6 +9,7 @@ function Layout() {
     <div className="layout">
         <div className="layout-item">
             <div className="layout-right">
+            <img src={logotype} alt="" width={'500px'} height={'500px'}  />
             </div>
             <div className="layout-left">
                 <div className="layout-box">
