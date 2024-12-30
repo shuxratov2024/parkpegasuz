@@ -6,6 +6,7 @@
     z-index: 99;
     background-color: white;
     padding-bottom: 20px;
+    scroll-behavior: smooth;
     
     &__item{
         max-width: 1440px;
@@ -96,7 +97,7 @@
         opacity: 1;
     }
     .brg-menu{
-            transform: translateX(100%);
+            // transform: translateX(100%);
             opacity: 0;
             position: absolute;
             top: 50px;   
@@ -110,6 +111,7 @@
         .header{
             display: flex;
             // align-items: center;
+            position: inherit;
             height: 50px;
             background-color: #ffde00;
             justify-content: space-between;
@@ -118,7 +120,7 @@
             overflow-x: hidden;
             transition: all 0.25s ease-in-out;
             opacity: 1;
-            transform: translateX(0);
+            // transform: translateX(0);
             position: absolute;
             top: 50px;
             

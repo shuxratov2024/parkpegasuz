@@ -24,7 +24,7 @@ function Header() {
             </div>
             <div className="header__nav">
                 <nav className="nav__bar">
-                    <a href="">О нас</a>
+                    <a href="#about">О нас</a>
                     
                     <a href="">Тарифы и цены </a>
                     <a href="">Наш офисы</a>
@@ -65,7 +65,7 @@ function Header() {
                     <div className="brg-center">
             <img src={logotype} alt="" width={'60px'} height={'60px'}  />
             <nav className="nav-brg">
-                    <a href="">О нас</a> 
+                    <a href="#about">О нас</a> 
                     <a href="">Тарифы и цены </a>
                     <a href="">Наш офисы</a>
             </nav>

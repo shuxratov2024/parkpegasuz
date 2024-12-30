@@ -6,8 +6,8 @@ function Layout() {
 
   return (
     <>
-    <div className="layout">
-        <div className="layout-item">
+    <div className="layout" id='about'>
+        <div className="layout-item" id='parkpegas'>
             <div className="layout-right">
             <img src={logotype} alt="" width={'500px'} height={'500px'}  />
             </div>
