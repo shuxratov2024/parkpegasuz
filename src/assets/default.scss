@@ -16,3 +16,9 @@ a{
 button{
     cursor: pointer;
 }
+
+@media screen and (max-width:400px) {
+    #root{
+        overflow-y: hidden;
+    }
+}

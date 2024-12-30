@@ -145,4 +145,33 @@
         
     }
 
-    
+
+@media screen and (max-width:400px) {
+    .header{
+        width: 400px;
+    }
+    .brg-menu.active{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .brg-menu_item{
+        width: 400px;
+        position: relative;
+        bottom: 0;
+        left: 125px;
+
+    }
+    .brg-center{
+        font-size: 20px;
+
+    }
+    .nav-brg{
+        row-gap: 10px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width:370px) {
+    .header{
+        width: 360px;
+    }
+}    
