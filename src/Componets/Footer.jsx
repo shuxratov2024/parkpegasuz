@@ -1,7 +1,7 @@
 import React from 'react'
-import Instagramm from '../../public/instagramm'
-import Telegram from '../../public/telegram'
-import Phone from '../../public/phone'
+import Instagramm from '/public/instagramm'
+import Telegram from '/public/telegram'
+import Phone from '/public/phone'
 
 function Footer() {
   return (
