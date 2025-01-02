@@ -3,9 +3,7 @@ import Telegram from '../../public/telegram'
 import Phone from '../../public/phone'
 import Logo from '../../public/instagramm'
 import logotype from '/logotype.png'
-// import { Cross as Hamburger } from 'hamburger-react'
 import Hamburger from 'hamburger-react'
-import Footer from './Footer'
 
 function Header() {
     const [isOpen,SetIsOpen] = useState(false)
