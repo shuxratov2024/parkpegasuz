@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Telegram from '../../public/telegram'
 import Phone from '../../public/phone'
-import Instagramm from '../../public/instagramm'
+import Logo from '../../public/instagramm'
 import logotype from '/logotype.png'
 // import { Cross as Hamburger } from 'hamburger-react'
 import Hamburger from 'hamburger-react'
@@ -34,7 +34,7 @@ function Header() {
             <ul>
                 <li> 
                     <a href="https://www.instagram.com/yandex.go.pegas.park">
-                    <Instagramm/>
+                    <Logo/>
                     </a>
                      </li>
                 <li><a href="https://t.me/park_pegas_yandex">

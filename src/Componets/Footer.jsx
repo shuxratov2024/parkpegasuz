@@ -1,5 +1,5 @@
 import React from 'react'
-import Instagramm from '/public/instagramm'
+import Logo from '/public/instagramm'
 import Telegram from '/public/telegram'
 import Phone from '/public/phone'
 
@@ -13,7 +13,7 @@ function Footer() {
                 <ul>
                     <li>
                         <a href="https://www.instagram.com/yandex.go.pegas.park">
-                        <Instagramm/>
+                        <Logo/>
                         </a>
                     </li>
                     <li><a href="https://t.me/park_pegas_yandex">
